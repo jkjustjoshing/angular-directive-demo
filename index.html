@@ -10,7 +10,7 @@
 			<h2 ng-click="doThing()">Angular Demo</h2>
 
 			<div class="list">
-				<jk-question-answer ng-repeat="questionObj in demo.questionArr" data="questionObj" selected="demo.selected"></jk-question-answer>
+				<jk-question-answer ng-repeat="questionObj in demo.questionArr" question="questionObj.question" answer="questionObj.answer"></jk-question-answer>
 			</div>
 		</div>
 
