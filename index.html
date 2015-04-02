@@ -10,10 +10,7 @@
 			<h2 ng-click="doThing()">Angular Demo</h2>
 
 			<div class="list">
-				<jk-question-answer ng-repeat="questionObj in demo.questionArr">
-					<a href="javascript:void(0);" ng-click="demo.selected = questionObj">{{questionObj.question}}</a>
-					<div ng-show="demo.selected === questionObj">Answer - {{questionObj.answer}}</div>
-				</jk-question-answer>
+				<jk-question-answer ng-repeat="questionObj in demo.questionArr"></jk-question-answer>
 			</div>
 		</div>
 
@@ -22,6 +19,6 @@
 
 
 		<script src="scripts/app.js"></script>
-		<script src="scripts/jk-question-answer.js"></script>
+		<script src="scripts/jk-question-answer/jk-question-answer.js"></script>
 	</body>
 </html>
