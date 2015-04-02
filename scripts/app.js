@@ -6,7 +6,7 @@ module.controller('demoCtrl', function(getStuff) {
 	var vm = this;
 	getStuff.getQuestions().then(function(questions) {
 		vm.questionArr = questions;
-		vm.selected = $scope.questionArr[0];
+		vm.selected = vm.questionArr[0];
 	});
 });
 
