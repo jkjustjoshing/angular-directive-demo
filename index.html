@@ -10,7 +10,10 @@
 			<h2 ng-click="doThing()">Angular Demo</h2>
 
 			<ul>
-			<li ng-repeat="questionObj in demo.questionArr" ng-class="{red: demo.selected == questionObj}" ><a ng-click="demo.selected = questionObj">{{questionObj.question}}</a></li>
+			<li ng-repeat="questionObj in demo.questionArr">
+				<a href="javascript:void(0);" ng-click="demo.selected = questionObj">{{questionObj.question}}</a>
+				<div ng-show="demo.selected === questionObj">Answer - {{questionObj.answer}}</div>
+			</li>
 			</ul>
 		</div>
 
