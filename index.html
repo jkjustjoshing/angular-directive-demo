@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+	<head>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+
+
+		<div class="container" ng-controller="demoCtrl as demo">
+			<h2 ng-click="doThing()">Angular Demo - {{'title' | joshIsAwesome}}</h2>
+
+			<ul>
+			<li ng-repeat="questionObj in demo.questionArr" ng-class="{red: demo.selected == questionObj}" ><a ng-click="demo.selected = questionObj">{{questionObj.question}}</a></li>
+			</ul>
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+
+
+		<script src="scripts/app.js"></script>
+	</body>
+</html>
