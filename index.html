@@ -9,12 +9,12 @@
 		<div class="container" ng-controller="demoCtrl as demo">
 			<h2 ng-click="doThing()">Angular Demo</h2>
 
-			<ul>
-			<li ng-repeat="questionObj in demo.questionArr">
-				<a href="javascript:void(0);" ng-click="demo.selected = questionObj">{{questionObj.question}}</a>
-				<div ng-show="demo.selected === questionObj">Answer - {{questionObj.answer}}</div>
-			</li>
-			</ul>
+			<div class="list">
+				<jk-question-answer ng-repeat="questionObj in demo.questionArr">
+					<a href="javascript:void(0);" ng-click="demo.selected = questionObj">{{questionObj.question}}</a>
+					<div ng-show="demo.selected === questionObj">Answer - {{questionObj.answer}}</div>
+				</jk-question-answer>
+			</div>
 		</div>
 
 
