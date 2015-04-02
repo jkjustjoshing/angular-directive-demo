@@ -7,7 +7,7 @@
 
 
 		<div class="container" ng-controller="demoCtrl as demo">
-			<h2 ng-click="doThing()">Angular Demo - {{'title' | joshIsAwesome}}</h2>
+			<h2 ng-click="doThing()">Angular Demo</h2>
 
 			<ul>
 			<li ng-repeat="questionObj in demo.questionArr" ng-class="{red: demo.selected == questionObj}" ><a ng-click="demo.selected = questionObj">{{questionObj.question}}</a></li>

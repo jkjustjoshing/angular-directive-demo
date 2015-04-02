@@ -10,14 +10,6 @@ module.controller('demoCtrl', function(getStuff) {
 	});
 });
 
-module.filter('joshIsAwesome', function() {
-
-	return function(string) {
-		return string + ', also Josh is awesome!';
-	};
-
-});
-
 module.factory('getStuff', function ($http, apiEndpoint) {
 
 	function getQuestions () {
