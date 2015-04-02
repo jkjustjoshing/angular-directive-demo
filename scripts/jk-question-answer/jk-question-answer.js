@@ -3,7 +3,8 @@ angular.module('demoApp').directive('jkQuestionAnswer', function() {
 	return {
 		restrict: 'E',
 		scope: {
-			data: '='
+			data: '=',
+			selected: '='
 		},
 		replace: false,
 		// Must run from server for AJAX to work! http://joshkra.me/angular-directive-demo
